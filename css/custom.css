@@ -1,4 +1,11 @@
 
 body {
 	color:#333333;
+	font-size: 14px;
 }
+
+ul li {
+	float: left;
+	list-style: none;
+}
+
