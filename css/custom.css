@@ -1,11 +1,27 @@
-
 body {
 	color:#333333;
-	font-size: 14px;
+	font-size: 16px;
+}
+
+h1 {
+	background: url('../img/PierreFoucart-logo.png') no-repeat top left;
+	background-size: contain;
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 30pt;
+}
+
+ul {
+	float: left;
 }
 
 ul li {
-	float: left;
 	list-style: none;
+	margin-right: 20pt;
 }
 
+p {
+	margin: 30pt 0 10pt 0;
+}
