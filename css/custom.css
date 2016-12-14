@@ -1,22 +1,15 @@
 body {
 	color:#333333;
-	background-color: #75d3e1;
 	padding: 0pt 15pt;
 }
 
 @media (min-width: 768px) { .container { max-width: 750px; } }
 
 h1 {
-	background: url('../img/PierreFoucart-logo.png') no-repeat top left;
-	background-size: contain;
-    /* Hide the text. */
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 60pt;
+	color: #;
 }
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 15px;
     margin-bottom: 15px;
     line-height: 1.1;
@@ -69,7 +62,6 @@ button.btn, button.btn:hover, button.btn:active {
 	font-weight: normal;
 	color: #4078c0;
 	padding: 3px 5px;
-	border: 0px;
 }
 
 button, input, optgroup, select, textarea {
