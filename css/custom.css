@@ -3,7 +3,7 @@ body {
 	padding: 15pt 15pt;
 }
 
-@media () { .container { max-width: 790px; } }
+@media (min-width: 768px) { .container { max-width: 790px; } }
 
 h1 {
 	color: #;
