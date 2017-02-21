@@ -3,7 +3,7 @@ body {
 	padding: 15pt 15pt;
 }
 
-@media (min-width: 768px) { .container { max-width: 790px; } }
+@media (min-width: 768px) { .container { max-width: 780px; } }
 
 h1 {
 	color: #;
@@ -11,10 +11,11 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 1.1;
 }
 h2 {
+	margin: 30pt 0 10pt 0;
     font-size: 21px;
 }
 h3 {
@@ -29,12 +30,19 @@ h5 {
 h6 {
     font-size: 11px;
 }
+strong {
+    font-weight: 500;}
 small {
     font-size: 90%}
+.job-description {
+	font-size: 21px;
+	margin: -5pt 0 10pt 0;
+}
 .lead {
-    margin-bottom: 30px;
+    margin: 20pt 0 10pt 0;
     font-size: 20px;
     font-weight: 300;
+    color: #666;
 }
 ul, ol {
     padding: 0;
@@ -55,7 +63,19 @@ ul li {
 }
 
 p {
-	margin: 30pt 0 10pt 0;
+	margin: 10pt 0 10pt 0;
+}
+
+.client-list {
+    -webkit-columns: 4 180px;
+       -moz-columns: 4 180px;
+            columns: 4 180px;
+    -webkit-column-gap: 3em;
+       -moz-column-gap: 3em;
+            column-gap: 3em;
+    -webkit-column-rule: 1px dotted #ddd;
+       -moz-column-rule: 1px dotted #ddd;
+            column-rule: 1px dotted #ddd;
 }
 
 button.btn, button.btn:hover, button.btn:active {
@@ -71,6 +91,10 @@ button, input, optgroup, select, textarea {
 }
 button {
     overflow: visible;
+}
+.btn-link {
+	padding-left: 0;
+	margin-top: 1em;	
 }
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
