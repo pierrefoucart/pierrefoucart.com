@@ -9,9 +9,11 @@ h1 {
 	color: #EC4949;
 	font-size: 56px;
 	line-height: 48px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     margin-top: 15px;
     margin-bottom: 10px;
     line-height: 1.1;
@@ -65,9 +67,9 @@ p {
     -webkit-column-gap: 3em;
        -moz-column-gap: 3em;
             column-gap: 3em;
-    -webkit-column-rule: 1px dotted #ddd;
+ /*   -webkit-column-rule: 1px dotted #ddd;
        -moz-column-rule: 1px dotted #ddd;
-            column-rule: 1px dotted #ddd;
+            column-rule: 1px dotted #ddd;*/
     font-size: 14px;
 }
 

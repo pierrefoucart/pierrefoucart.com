@@ -21,6 +21,8 @@
 		<link rel="stylesheet" href="css/custom.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
 
 	    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>	
 	    <script>
@@ -33,6 +35,14 @@
 	        console.log(e);
 	    });
 	    </script>
+	    <script>
+			$('.collapse').on('show', function() {
+			    $('#intro-switch').html('less')
+			})
+			$('.collapse').on('hide', function() {
+			    $('#intro-switch.collapsed').html('more')
+			})
+		</script>
 	    <script src="https://use.fontawesome.com/c405ad6277.js"></script>
    </head>
 
@@ -50,17 +60,17 @@
 
 	<div class="row">
 		<div class="col-lg-8 col-xs-12 ">
-			<p class="lead">When I'm not on my 🚴 I help companies build products that humans ❤️ to use.</p>
+			<p class="lead">When I'm not on my 🚴 I help companies build products that people ❤️ to use.</p>
 		</div>
 	</div>
 		
 	<div class="row">
-		<div class="col-lg-4 col-xs-12 ">
-			<h2>My method</h2>
+		<div class="col-lg-3 col-xs-12 ">
+			<h2>Methodology</h2>
 My proposals answer end-users needs while meeting all stakeholders objectives.
 Every company and endeavour being different, I adapt my methods and process to each client.
 		</div>
-		<div class="col-lg-8 col-xs-12 client-list">
+		<div id="intro" class="col-lg-8 col-lg-offset-1 col-xs-12 client-list">
 			<h2>Past clients</h2>
 			Here are companies I had the pleasure to work with over the past 10 years providing <strong>UX design</strong>, <strong>UX audit</strong>, <strong>product strategy</strong> or <strong>user testing</strong>:
 		
@@ -71,7 +81,7 @@ Every company and endeavour being different, I adapt my methods and process to e
 					<li class="collapse">Bell</li>
 					<li class="collapse">Be My Guest</li>
 					<li><a href="https://angel.co/breather">Breather</a></li>
-					<li>Club Internet</li>
+					<li class="collapse">Club Internet</li>
 					<li class="collapse">Coca Cola</li>
 					<li><a href="https://angel.co/dailymotion">Dailymotion</a></li>
 					<li>Dairy&nbsp;Farmers&nbsp;of&nbsp;Canada</li>
@@ -80,6 +90,7 @@ Every company and endeavour being different, I adapt my methods and process to e
 					<li>Energie Cardio</li>
 					<li class="collapse">Fido</li>
 					<li class="collapse">GlaxoSmithKline</li>
+					<li>Home Depot</li>
 					<li class="collapse">Hydro Québec</li>
 					<li class="collapse">Just for Laugh</li>
 					<li>La&nbsp;Capitale&nbsp;Insurance</li>
@@ -90,19 +101,19 @@ Every company and endeavour being different, I adapt my methods and process to e
 					<li>Ricardo</li>
 					<li>Target</li>
 					<li class="collapse">TD Canada</li>
-					<li>The Home Depot</li>
+					<li class="collapse">Télé Québec</li>
 					<li class="collapse">Telus</li>
 					<li>TFO</li>
 					<li>Tourisme Québec</li>
 					<li class="collapse">TradeFan</li>
 					<li>TVA Nouvelles</li>
-					<li class="collapse">Télé Québec</li>
 					<li>Van Houtte</li>
 					<li class="collapse">Wallmart</li>
 					<li class="collapse">Yellow Pages</li>
 				</ul>		
-			</p>	
-			<button class="btn-link" data-toggle="collapse" data-target=".collapse" aria-expanded="false" aria-controls="collapseExample">‣ Display more</button>
+			</p>
+			<button id="intro-switch" class="btn btn-success collapsed" data-toggle="collapse" data-target=".collapse">more</button>	
+			<button class="btn-link center-block collapse2" data-toggle="collapse" data-target=".collapse">‣ Display more</button>
 		</div>
 		<!--<div class="col-lg-5 col-lg-offset-1 col-md-4 col-md-offset-1 col-xs-12 contact">-->
 		<div class="col-lg-6 col-xs-12 contact">
