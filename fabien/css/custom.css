@@ -61,9 +61,9 @@ p {
 }
 
 .client-list ul {
-    -webkit-columns: 4 180px;
-       -moz-columns: 4 180px;
-            columns: 4 180px;
+    -webkit-columns: 4 160px;
+       -moz-columns: 4 160px;
+            columns: 4 160px;
     -webkit-column-gap: 3em;
        -moz-column-gap: 3em;
             column-gap: 3em;
