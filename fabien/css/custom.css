@@ -64,9 +64,9 @@ p {
     -webkit-columns: 4 160px;
        -moz-columns: 4 160px;
             columns: 4 160px;
-    -webkit-column-gap: 3em;
-       -moz-column-gap: 3em;
-            column-gap: 3em;
+    -webkit-column-gap: 2em;
+       -moz-column-gap: 2em;
+            column-gap: 2em;
  /*   -webkit-column-rule: 1px dotted #ddd;
        -moz-column-rule: 1px dotted #ddd;
             column-rule: 1px dotted #ddd;*/
