@@ -2,8 +2,8 @@ body {
 	color:#2359EC;
 	padding: 15pt 15pt;
 	font-size: 20px;
+	background-color: #f3f3f3;
 }
-
 
 h1 {
 	color: #EC4949;
@@ -33,7 +33,7 @@ small {
 	font-size: 14px;
 }
 .lead {
-    margin: 20pt 0 10pt 0;
+    margin: 100px 0 85px 0;
     font-size: 36px;
     font-weight: 300;
     line-height: 48px;
@@ -71,6 +71,10 @@ p {
        -moz-column-rule: 1px dotted #ddd;
             column-rule: 1px dotted #ddd;*/
     font-size: 14px;
+}
+
+.client-list li {
+	line-height: 22px;
 }
 
 button.btn, button.btn:hover, button.btn:active {
@@ -151,9 +155,10 @@ hr:after, .rule:after {
     padding-left: 10px;
 }
 .contact {
-	background-image: url("img/pierre_foucart_2015_bw.png");
-	background-position: right center;
-	background: no-repeat;
+	background: url("../img/pierre_foucart.jpg") right top no-repeat;
+	background-size: contain;
+	min-height: 200px;
+	margin: 80px 0 120px 0;
 }
 
 /* Tooltip CSS */
