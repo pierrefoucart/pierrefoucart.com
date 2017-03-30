@@ -75,9 +75,9 @@ p {
 
 @media screen and (max-width: 480px) {
 	.client-list ul {
-		-webkit-columns: 2 150px;
-		   -moz-columns: 2 150px;
-		        columns: 2 150px;
+		-webkit-columns: 2 140px;
+		   -moz-columns: 2 140px;
+		        columns: 2 140px;
 		-webkit-column-gap: 2em;
 		   -moz-column-gap: 2em;
 		        column-gap: 2em;
