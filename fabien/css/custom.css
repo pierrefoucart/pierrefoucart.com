@@ -1,40 +1,43 @@
 body {
-	color:#333333;
-	padding: 0pt 15pt;
+	color:#2359EC;
+	padding: 15pt 15pt;
+	font-size: 20px;
+	background-color: #f3f3f3;
+	margin-top: 50px;
 }
-
-@media (min-width: 768px) { .container { max-width: 750px; } }
 
 h1 {
-	color: #;
+	color: #EC4949;
+	font-size: 56px;
+	line-height: 48px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 1.1;
 }
 h2 {
-    font-size: 21px;
-}
-h3 {
-    font-size: 16px;
-}
-h4 {
+	margin: 30pt 0 10pt 0;
     font-size: 14px;
+    color: #101A4D;
+    text-transform: uppercase;
 }
-h5 {
-    font-size: 12px;
-}
-h6 {
-    font-size: 11px;
-}
+strong {
+    font-weight: 500;}
 small {
     font-size: 90%}
+.job-description {
+    margin-top: 15px;
+	font-size: 14px;
+}
 .lead {
-    margin-bottom: 30px;
-    font-size: 20px;
+    margin: 100px 0 85px 0;
+    font-size: 36px;
     font-weight: 300;
+    line-height: 48px;
 }
 ul, ol {
     padding: 0;
@@ -55,7 +58,35 @@ ul li {
 }
 
 p {
-	margin: 30pt 0 10pt 0;
+	margin: 10pt 0 10pt 0;
+}
+
+.client-list ul {
+    -webkit-columns: 4 160px;
+       -moz-columns: 4 160px;
+            columns: 4 160px;
+    -webkit-column-gap: 3em;
+       -moz-column-gap: 3em;
+            column-gap: 3em;
+ /*   -webkit-column-rule: 1px dotted #ddd;
+       -moz-column-rule: 1px dotted #ddd;
+            column-rule: 1px dotted #ddd;*/
+    font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+	.client-list ul {
+		-webkit-columns: 2 140px;
+		   -moz-columns: 2 140px;
+		        columns: 2 140px;
+		-webkit-column-gap: 2em;
+		   -moz-column-gap: 2em;
+		        column-gap: 2em;
+    }
+}
+
+.client-list li {
+	line-height: 22px;
 }
 
 button.btn, button.btn:hover, button.btn:active {
@@ -71,6 +102,12 @@ button, input, optgroup, select, textarea {
 }
 button {
     overflow: visible;
+}
+
+.client-list .btn-link {
+    font-size: 14px;
+	margin-top: 1em;
+	padding-left: 0;
 }
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
@@ -129,7 +166,12 @@ hr:after, .rule:after {
     padding-right: 10px;
     padding-left: 10px;
 }
-
+.contact {
+	background: url("../img/pierre_foucart.jpg") right top no-repeat;
+	background-size: contain;
+	min-height: 200px;
+	margin: 80px 0 120px 0;
+}
 
 /* Tooltip CSS */
 .btn {
