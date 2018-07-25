@@ -23,35 +23,6 @@
 		<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
 		</script>
 
-		<script>
-			$(document).ready(function() {
-
-			  $(".toggle-accordion").on("click", function() {
-			    var accordionId = $(this).attr("accordion-id"),
-			      numPanelOpen = $(accordionId + ' .collapse.in').length;
-
-			    $(this).toggleClass("active");
-
-			    if (numPanelOpen == 0) {
-			      openAllPanels(accordionId);
-			    } else {
-			      closeAllPanels(accordionId);
-			    }
-			  })
-
-			  openAllPanels = function(aId) {
-			    console.log("setAllPanelOpen");
-			    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-			  }
-			  closeAllPanels = function(aId) {
-			    console.log("setAllPanelclose");
-			    $(aId + ' .panel-collapse.in').collapse('hide');
-			  }
-
-			});
-
-		</script>
-
   </head>
 <body>
 
@@ -83,7 +54,7 @@
 			</div>
 			<div class="col-lg-6 col-xs-12 no-gutter">
 				<h2>Any questions?</h2>
-				<p>Email me <a data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text="pierre.foucart@gmail.com">pierre.foucart@gmail.com</a><br>
+				<p>Email me <a data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text="pierre.foucart@gmail.com" class="copy">pierre.foucart@gmail.com</a><br>
 				  or find me on <a href="https://linkedin.com/in/pierrefoucart">LinkedIn</a></p>
 			</div>
 		</div>
@@ -98,128 +69,66 @@ Here are companies I had the pleasure to work with over the past 10 years provid
 			</div>
 			<div class="clearfix"></div>
 
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 no-gutter">
-					
-				  <div class="panel-default">
-				    <div class="panel-heading" role="tab" id="headingOne">
-				      <h3>
-				      	<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Finance</a>
-				      </h3>
-				    </div>
-				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-				      <ul>
+				    <h3>Finance</h3>
+					<ul>
 						<li>Aeroplan</li>
 						<li>BDC</li>
 						<li>Desjardins</li>
 						<li>La Capitale Insurance</li>
 						<li>TD Canada Trust</li>
-				      </ul>
-				    </div>
-				  </div>
+					</ul>
 
-				  <div class=" panel-default">
-				    <div class="panel-heading" role="tab" id="headingTwo">
-				      <h3>
-					      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Retail</a>
-				      </h3>
-				    </div>
-				    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-				      <ul>
+					<h3>Retail</h3>
+					<ul>
 						<li>DeSerres</li>
 						<li>Energie Cardio</li>
 						<li>Target</li>
 						<li>The Home Depot</li>
 						<li>Van Houtte</li>
-				      </ul>
-				    </div>
-				  </div>
-				  
+					</ul>
 				</div>
 				
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 no-gutter">
-					
-				  <div class="panel-default">
-				    <div class="panel-heading" role="tab" id="headingThree">
-				      <h3>
-				      	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Health</a>
-				      </h3>
-				    </div>
-				    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-				      <ul>
+					<h3>Health</h3>
+					<ul>
 						<li>L'Oreal</li>
 						<li>GlaxoSmithKline</li>
 						<li>Novartis</li>
 						<li>Pfizer</li>
 						<li>Walmart Pharmacy</li>
-				      </ul>
-				    </div>
-				  </div>
+					</ul>
 
-				  <div class="panel-default">
-				    <div class="panel-heading" role="tab" id="heading4">
-				      <h3>
-				      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">Telecom</a>
-				    	</h3>
-				    </div>
-				    <div id="collapse4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading4">
-				      <ul>
+					<h3>Telecom</h3>
+					<ul>
 						<li>Bell
 						<li>Club Internet</li>
 						<li>Fido</li>
 						<li>Telus</li>
-				      </ul>
-				    </div>
-				  </div>
-				  
+					</ul>
 				</div>
 				
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 no-gutter">
-					
-				  <div class="panel-default">
-				    <div class="panel-heading" role="tab" id="heading5">
-				      <h3>
-				      	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">Media/Entertainment</a>
-				    	</h3>
-				    </div>
-				    <div id="collapse5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading5">
-				      <ul>
+					<h3>Media/Entertainment</h3>
+					<ul>
 						<li>Dailymotion</li>
 						<li>Just for Laughs</li>
 						<li>Ricardo</li>
 						<li>Télé-Québec</li>
 						<li>TFO</li>
 						<li>TVA Nouvelles</li>
-				      </ul>
-				    </div>
-				  </div>
+					</ul>
 
-				  <div class="panel-default">
-				    <div class="panel-heading" role="tab" id="heading6">
-				      <h3>
-				  	    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">Tourism</a>
-				      </h3>
-				    </div>
-				    <div id="collapse6" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading6">
-				      <ul>
+					<h3>Tourism</h3>
+					<ul>
 						<li>Air Canada</li>
 						<li>Tourisme Quebec</li>
-				      </ul>
-				    </div>
-				  </div>
-				  
+					</ul>
 				</div>
 
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 no-gutter">
-					
-				  <div class="panel-default">
-					<div class="panel-heading" role="tab" id="heading7">
-				      <h3>
-				  	    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">Other</a>
-				      </h3>
-					</div>
-					<div id="collapse7" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading7">
-				      <ul>
+					<h3>Other</h3>
+					<ul>
 						<li>Bath Fitter</li>
 						<li>Breather</li>
 						<li>Coca Cola</li>
@@ -228,13 +137,9 @@ Here are companies I had the pleasure to work with over the past 10 years provid
 						<li>Imperial Tobacco</li>
 						<li>Michelin</li>
 						<li>Yellow Pages</li>
-				      </ul>
-					</div>
-				  </div>
-				
+					</ul>
 				</div>
-				
-			</div>
+			
 		</div>
 	</div>
 </div>
