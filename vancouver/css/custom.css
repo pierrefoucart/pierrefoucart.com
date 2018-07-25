@@ -376,6 +376,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	.image {
 		margin-top: -50px;
 		background-image: url("../img/PierreFoucart_mountain_mobile.png");
+		height: 580px;
 	}
 	.title{
 		text-align: left;
