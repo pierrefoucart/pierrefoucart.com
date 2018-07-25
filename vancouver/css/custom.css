@@ -30,11 +30,14 @@ h1 {
 
 .image{
     margin-top: 56px;
-    background-image: url("../img/mountain.png");
     background-position: left bottom;
     background-size: contain;
     background-repeat: no-repeat;
     height: 354px;
+    @media(max-width: 700px){
+    }
+    @media(min-width: 768px) {
+    }
 }
 
 
@@ -371,8 +374,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		margin-top: 32px;
 	}
 	.image {
-		background-position: 50px;
 		margin-top: -50px;
+		background-image: url("../img/PierreFoucart_mountain_mobile.png");
 	}
 	.title{
 		text-align: left;
@@ -381,7 +384,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		margin-top: 0;
 	}
 }
-@media(min-width:768px), @media(min-width:992px), @media(min-width:1200px){} {
-	
-	
+@media(min-width:768px) {
+	.image {
+		background-image: url("../img/PierreFoucart_mountain_large.png");
+	}
 }
