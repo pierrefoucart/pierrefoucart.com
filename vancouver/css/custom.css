@@ -99,111 +99,14 @@ a {
 a:hover, a:active {
     text-decoration: underline;
 }
-a.copy {
-    color: #4078c0;
-    text-decoration: none;
-    cursor: copy;
+button{
+	background-color: #AEE7DA;
+	font-size: 14px;
+	border-radius: 4px;
+	width: auto;
 }
 
-button {
-  overflow: visible;
-}
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
-button[disabled], html input[disabled] {
-    cursor: default;
-}
-button::-moz-focus-inner, input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
 
-.container:before {
-    display: table;
-    content: ""}
-.container:after {
-    display: table;
-    clear: both;
-    content: ""}
-.columns {
-    margin-right: -10px;
-    margin-left: -10px;
-}
-.columns:before {
-    display: table;
-    content: ""}
-.columns:after {
-    display: table;
-    clear: both;
-    content: ""}
-.column {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-/* Tooltip CSS */
-.btn:hover, .btn:active, .btn:focus {
-	color: #428bca;
-}
-
-.btn {
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-appearance: none;
-    background: none;
-    font-size: inherit;
-    padding: 0;
-}
-.btn:focus {
-    text-decoration: none;
-    outline: none;
-}
-.btn:focus:hover, .btn.selected:focus {
-}
-.btn:hover, .btn:active {
-    text-decoration: none;
-}
-.btn:active {
-    background-image: none;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
-}
-.btn:disabled, .btn:disabled:hover, .btn.disabled, .btn.disabled:hover {
-    cursor: default;
-    background-image: none;
-    box-shadow: none;
-}
-		.state {
-		    display: inline-block;
-		    padding: 4px 8px;
-		    font-weight: bold;
-		    line-height: 20px;
-		    color: #fff;
-		    text-align: center;
-		    border-radius: 3px;
-		    background-color: #999;
-		}
-		.state-open, .state-proposed, .state-reopened {
-		    background-color: #6cc644;
-		}
-		.state-merged {
-		    background-color: #6e5494;
-		}
-		.state-closed {
-		    background-color: #bd2c00;
-		}
-		.state-renamed {
-		    background-color: #fffa5d;
-		}
 .tooltipped {
     position: relative;
 }
@@ -354,6 +257,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		margin-top: -50px;
 		background-image: url("../img/PierreFoucart_mountain_mobile.png");
 		height: 580px;
+		background-size: cover;
 	}
 	.client-list{
 		padding-bottom: 40px;
