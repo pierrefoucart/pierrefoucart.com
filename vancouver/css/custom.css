@@ -9,23 +9,22 @@ body {
 
 h1 {
 	color: #3C3D92;
-	font-size: 56px;
-	line-height: 48px;
-	margin-top: 112px;
 	margin-bottom: 10px;
 	width: 200px;
 	font-weight: 600;
+	font-size: 56px;
+	line-height: 48px;
 }
 
 .title{
 	text-align: right;
+	display: contents;
 }
 .description {
 	font-size: 14px;
 	text-transform: uppercase;
 	line-height: 22px;
 	font-weight: bold;
-	margin-top: 134px;
 }
 
 .image{
@@ -33,11 +32,7 @@ h1 {
     background-position: left bottom;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 354px;
-    @media(max-width: 700px){
-    }
-    @media(min-width: 768px) {
-    }
+    background-image: url("../img/PierreFoucart_mountain_large.png");
 }
 
 
@@ -47,36 +42,32 @@ h2, h3 {
 h2 {
     font-size: 14px;
     color: #101A4D;
-    margin-bottom: 8px;
 }
 h3 {
 	font-size: 12px;
-	margin: 32px 0 0 0;
-	padding: 0 16px 0 0;
+	margin: 0;
 	font-weight: bold;
 }
 strong {
-  font-weight: 500;}
+	font-weight: 500;
+}
 small {
-  font-size: 90%}
+	font-size: 90%
+}
 
-.no-gutter {
-	padding-left: 0;
-	padding-right: 0;
+.clearfix{
+	margin-bottom: 24px;
 }
 
 .tagline {
-	margin-top: 48px;
-  margin-bottom: 80px;
-  font-size: 32px;
-  line-height: 40px;
+	font-size: 32px;
+	line-height: 40px;
 	color: #8D8D8D;
 }
 .tagline bold{
 	color: #4a4a4a;
 }
-.client-list ul {
-	margin-bottom: 32px;
+ul {
     padding: 0;
     margin-top: 0;
 	float: left;
@@ -91,25 +82,14 @@ ul li {
 
 .mystory  {
 	background-color: #92E3D1;
-	padding-bottom: 16px;
 }
 
-.mymethod  {
-	background-color: #D5EDE8;
-	padding-bottom: 16px;
-}
-
-.questions  {
+.mymethod, .questions  {
 	background-color: #D5EDE8;
 }
 
-.client-list {
+.past-clients {
 	background-color: #E3E4EB;
-}
-
-.client-list .btn-link {
-	margin-top: 1em;
-	padding: 0;
 }
 
 a {
@@ -202,28 +182,28 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-image: none;
     box-shadow: none;
 }
-.state {
-    display: inline-block;
-    padding: 4px 8px;
-    font-weight: bold;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
-    border-radius: 3px;
-    background-color: #999;
-}
-.state-open, .state-proposed, .state-reopened {
-    background-color: #6cc644;
-}
-.state-merged {
-    background-color: #6e5494;
-}
-.state-closed {
-    background-color: #bd2c00;
-}
-.state-renamed {
-    background-color: #fffa5d;
-}
+		.state {
+		    display: inline-block;
+		    padding: 4px 8px;
+		    font-weight: bold;
+		    line-height: 20px;
+		    color: #fff;
+		    text-align: center;
+		    border-radius: 3px;
+		    background-color: #999;
+		}
+		.state-open, .state-proposed, .state-reopened {
+		    background-color: #6cc644;
+		}
+		.state-merged {
+		    background-color: #6e5494;
+		}
+		.state-closed {
+		    background-color: #bd2c00;
+		}
+		.state-renamed {
+		    background-color: #fffa5d;
+		}
 .tooltipped {
     position: relative;
 }
@@ -340,16 +320,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: -5px;
     border-right-color: rgba(0, 0, 0, 0.8);
 }
-.tooltipped-multiline:after {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    max-width: 250px;
-    word-break: break-word;
-    word-wrap: normal;
-    white-space: pre-line;
-    border-collapse: separate;
-}
+		.tooltipped-multiline:after {
+		    width: -webkit-max-content;
+		    width: -moz-max-content;
+		    width: max-content;
+		    max-width: 250px;
+		    word-break: break-word;
+		    word-wrap: normal;
+		    white-space: pre-line;
+		    border-collapse: separate;
+		}
 }.tooltipped-sticky:before, .tooltipped-sticky:after {
     display: inline-block;
 }
@@ -357,36 +337,41 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: table-cell;
 }
 
-.panel-default{
-	border: none;
-}
+		.panel-default{
+			border: none;
+		}
+		
+		.panel-default>.panel-heading {
+		  background: none;
+		  padding: 0;
+		}
 
-.panel-default>.panel-heading {
-  background: none;
-  padding: 0;
-}
 
 
 
-/* Landscape phones and portrait tablets */
 @media (max-width: 768px) {
-	h1{
-		margin-top: 32px;
-	}
 	.image {
 		margin-top: -50px;
 		background-image: url("../img/PierreFoucart_mountain_mobile.png");
 		height: 580px;
 	}
-	.title{
-		text-align: left;
-	}
-	.description{
-		margin-top: 0;
+	.client-list{
+		padding-bottom: 40px;
 	}
 }
-@media(min-width:768px) {
+
+@media(max-width:992px) {
+	h1 {
+		font-size: 48px;
+		line-height: 40px;
+	}
+}
+
+@media(max-width:540px) { /* xs devices */
 	.image {
 		background-image: url("../img/PierreFoucart_mountain_large.png");
+	}
+	.title{
+		text-align: left;
 	}
 }
