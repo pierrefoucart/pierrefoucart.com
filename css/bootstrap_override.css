@@ -10,8 +10,8 @@ body {
 h1 {
 	color: #3C3D92;
 	width: 200px;
-	font-weight: 600;
-	font-size: 56px;
+	font-weight: 800;
+	font-size: 40px;
 	line-height: 48px;
 }
 
@@ -23,14 +23,14 @@ h1 {
 	font-size: 14px;
 	text-transform: uppercase;
 	line-height: 22px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .image{
-    background-position: left bottom;
+    background-position: left center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../img/PierreFoucart_mountain_large.png");
+    background-image: url("../img/pierre_foucart_portrait.png");
 }
 
 
@@ -173,13 +173,6 @@ button{
 	}
 	.client-list{
 		padding-bottom: 40px;
-	}
-}
-
-@media(max-width:992px) {
-	h1 {
-		font-size: 48px;
-		line-height: 40px;
 	}
 }
 
