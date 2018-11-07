@@ -9,16 +9,11 @@ body {
 
 h1 {
 	color: #3C3D92;
-	width: 200px;
 	font-weight: 800;
 	font-size: 40px;
 	line-height: 48px;
 }
 
-.title{
-	text-align: right;
-	display: contents;
-}
 .description {
 	font-size: 14px;
 	text-transform: uppercase;
@@ -34,12 +29,13 @@ h1 {
 }
 
 
-h2, h3 {
+h2, h3, .sectiontitle {
     text-transform: uppercase;
 }
-h2 {
+h2, .sectiontitle {
     font-size: 14px;
     color: #101A4D;
+    font-weight: bold;
 }
 h3 {
 	font-size: 12px;
@@ -78,13 +74,6 @@ ul li {
 	line-height: 24px;
 }
 
-.mystory  {
-	background-color: #92E3D1;
-}
-
-.mymethod, .questions  {
-	background-color: #D5EDE8;
-}
 
 .past-clients {
 	background-color: #E3E4EB;
