@@ -42,6 +42,14 @@ h3 {
 	margin: 0;
 	font-weight: bold;
 }
+h4 {
+	font-size: 13px;
+	margin: 0;
+	font-weight: bold;
+}
+.experience small{
+	font-size: 12px;
+}
 strong {
 	font-weight: 500;
 }
@@ -151,6 +159,10 @@ button{
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
+}
+
+.experience img{
+	background-color: aqua;
 }
 
 @media (max-width: 768px) {
