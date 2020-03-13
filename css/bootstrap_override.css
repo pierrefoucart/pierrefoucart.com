@@ -8,31 +8,14 @@ body {
 }
 
 h1 {
-	color: #3C3D92;
-	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 24px;
+	line-height: 32px;
 }
 
-.description {
-	font-size: 14px;
-	text-transform: uppercase;
-	line-height: 22px;
-	font-weight: 700;
-}
-
-.image{
-    background-position: left center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../img/pierre_foucart_portrait.png");
-}
-
-
-h2, h3, .sectiontitle {
+h2, h3 {
     text-transform: uppercase;
 }
-h2, .sectiontitle {
+h2 {
     font-size: 14px;
     color: #101A4D;
     font-weight: bold;
@@ -41,14 +24,6 @@ h3 {
 	font-size: 12px;
 	margin: 0;
 	font-weight: bold;
-}
-h4 {
-	font-size: 13px;
-	margin: 0;
-	font-weight: bold;
-}
-.experience small{
-	font-size: 12px;
 }
 strong {
 	font-weight: 500;
@@ -64,27 +39,10 @@ small {
 .tagline {
 	font-size: 32px;
 	line-height: 40px;
-	color: #8D8D8D;
+	color: #606060;
 }
 .tagline bold{
-	color: #4a4a4a;
-}
-ul {
-    padding: 0;
-    margin-top: 0;
-	float: left;
-	width: 100%;
-}
-
-ul li {
-	list-style: none;
-	font-size: 14px;
-	line-height: 24px;
-}
-
-
-.past-clients {
-	background-color: #E3E4EB;
+	color: #3C3D92;
 }
 
 a {
@@ -159,26 +117,4 @@ button{
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
-}
-
-.experience img{
-	background-color: aqua;
-}
-
-@media (max-width: 768px) {
-	.image {
-		height: 0;
-		width: 100%;
-		padding-top: 62.43%; 
-		background-size: contain;
-	}
-	.client-list{
-		padding-bottom: 40px;
-	}
-}
-
-@media(max-width:375px) { /* xs devices */
-	.title{
-		text-align: left;
-	}
 }
