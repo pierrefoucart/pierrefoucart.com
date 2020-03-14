@@ -3,7 +3,7 @@ body {
 	font-weight: normal;
 	color: #4A4A4A;
 	font-size: 16px;
-	background-color: #f3f3f3;
+	background-color: #faf9f6;
 	line-height: 24px;
 }
 
@@ -117,4 +117,24 @@ button{
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
+}
+
+
+/* Animations */
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: 2;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
 }
