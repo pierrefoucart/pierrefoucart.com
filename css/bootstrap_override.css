@@ -3,36 +3,19 @@ body {
 	font-weight: normal;
 	color: #4A4A4A;
 	font-size: 16px;
-	background-color: #f3f3f3;
+	background-color: #faf9f6;
 	line-height: 24px;
 }
 
 h1 {
-	color: #3C3D92;
-	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 24px;
+	line-height: 32px;
 }
 
-.description {
-	font-size: 14px;
-	text-transform: uppercase;
-	line-height: 22px;
-	font-weight: 700;
-}
-
-.image{
-    background-position: left center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../img/pierre_foucart_portrait.png");
-}
-
-
-h2, h3, .sectiontitle {
+h2, h3 {
     text-transform: uppercase;
 }
-h2, .sectiontitle {
+h2 {
     font-size: 14px;
     color: #101A4D;
     font-weight: bold;
@@ -56,27 +39,10 @@ small {
 .tagline {
 	font-size: 32px;
 	line-height: 40px;
-	color: #8D8D8D;
+	color: #606060;
 }
 .tagline bold{
-	color: #4a4a4a;
-}
-ul {
-    padding: 0;
-    margin-top: 0;
-	float: left;
-	width: 100%;
-}
-
-ul li {
-	list-style: none;
-	font-size: 14px;
-	line-height: 24px;
-}
-
-
-.past-clients {
-	background-color: #E3E4EB;
+	color: #3C3D92;
 }
 
 a {
@@ -153,20 +119,22 @@ button{
     transform: translateX(50%);
 }
 
-@media (max-width: 768px) {
-	.image {
-		height: 0;
-		width: 100%;
-		padding-top: 62.43%; 
-		background-size: contain;
-	}
-	.client-list{
-		padding-bottom: 40px;
-	}
+
+/* Animations */
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: 2;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 
-@media(max-width:375px) { /* xs devices */
-	.title{
-		text-align: left;
-	}
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
 }
